@@ -4,29 +4,25 @@
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link href="https://fonts.googleapis.com/css2?family=Almarai&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&family=Almarai&display=swap" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 <!--Header-->
-<picture>
-    <source srcset="img/logo/portfolio-logo.png" media="(max-edith:767px)">
-    <img src="img/logo/portfolio-logo@2x.png" alt="logo">
-</picture>
-<nav>
-    <ul>
-        <li><a href="index.html">Work</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
+<img class="logo" src="img/logo/wp-portfolio-logo.png" alt="logo">
+<span class="nav-links">
+        <a href="index.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="#contact">Contact</a>
+</span>
 <!--About Me-->
 <main>
 <div> <!--Main Container-->
     <div> <!--About-->
         <h1>About</h1>
     <picture>
-        <source srcset="img/profile-photo/profile-photo" media="(max-edith:1080px)">
-        <img src="img/profile-photo/profile-photo-2x.png" alt="profile-photo">
+        <source class="profile-photo" srcset="img/profile-photo/profile-photo.png" media="(max-width:300px)">
+        <img class="profile-photo" src="img/profile-photo/profile-photo-2x.png" alt="profile-photo">
     </picture>
     <div><!--My Story and Skills & Tools-->
         <div> <!--My Story-->
@@ -36,8 +32,8 @@
             <p>When I'm not designing, you can find me hanging out with my dog, Delilah, watching Lego Masters, playing Tetris, doing yoga, or going on photography adventures.</p>
             <p><a href="files/christina-louie-cv.pdf" target="_blank" download>Download my CV</a></p>
         </div>  
-        <div><!--Skills & Tools-->
-            <div> <!--Skills-->
+        <div class="container-section"><!--Skills & Tools-->
+            <div class="section-left"> <!--Skills-->
                 <h3>Relevant Skills</h3>
                     <ul>
                         <li>Competitive Analysis</li>
@@ -51,7 +47,7 @@
                         <li>Frontend Development</li>
                     </ul>
             </div> <!--End Skills-->
-            <div> <!--Tools-->
+            <div class="section-right"> <!--Tools-->
                 <h3>Tools</h3>
                     <ul>
                         <li>Adobe XD</li>
@@ -67,18 +63,15 @@
 </main>
 <!--Footer-->
 <footer id="contact">
-    <div>
-        <h2>Get in Touch</h2>
+    <div class="footer">
+        <h1>Get in Touch</h1>
         <p>Need a UI/UX designer? Contact me by the following options! Happy to help!</p>
+        <p><a href="mailto:christinaclouie@gmail.com" class="button contact">Send me an Email</a></p>
         <p><a href="about.html#skills">My Skills</a></p>
-        <div>
-            <a href="">Send Email</a><!-- button or link label -->
-        </div>
-        <nav>
-            <ul>
+        <span>
             <!--LinkedIn-->
-            <li><a href="https://www.linkedin.com/in/christinaclouie/" target="_blank">
-                <svg id="Capa_1" style="enable-background:new 0 0 112.196 112.196;" version="1.1" viewBox="0 0 112.196 112.196" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <a href="https://www.linkedin.com/in/christinaclouie/" target="_blank">
+                <svg class="social-icons" id="Capa_1" style="enable-background:new 0 0 112.196 112.196;" version="1.1" viewBox="0 0 112.196 112.196" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g><circle cx="56.098" cy="56.097" r="56.098" style="fill:#007AB9;"/>
                     <path d="M89.616,60.611v23.128H76.207V62.161c0-5.418-1.936-9.118-6.791-9.118    
                     c-3.705,0-5.906,2.491-6.878,4.903c-0.353,0.862-0.444,2.059-0.444,3.268v22.524H48.684c0,0,0.18-36.546,0-40.329h13.411v5.715    
@@ -88,10 +81,10 @@
                     M27.865,83.739H41.27V43.409H27.865V83.739z" style="fill:#F1F2F2;"/>
                     </g>
                 </svg>
-            </a></li>
+            </a>
             <!--Behance>-->
-            <li><a href="https://www.behance.net/christinalouie" target="_blank">
-                <svg id="Capa_2" style="enable-background:new 0 0 112.196 112.196;" version="1.1" viewBox="0 0 112.196 112.196" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <a href="https://www.behance.net/christinalouie" target="_blank">
+                <svg class="social-icons" id="Capa_2" style="enable-background:new 0 0 112.196 112.196;" version="1.1" viewBox="0 0 112.196 112.196" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g><circle cx="56.098" cy="56.098" r="56.098" style="fill:#4176FA;"/>
                     <path d="M76.209,46.341c-16.203,0-16.224,16.142-16.224,16.225c0,0-1.11,16.162,16.224,16.162    
                     c0,0,14.456,0.822,14.456-11.248h-7.423c0,0,0.246,4.544-6.786,4.544c0,0-7.423,0.494-7.423-7.341h21.879    
@@ -102,10 +95,10 @@
                     C49.334,69.783,46.024,70.297,44.276,70.338z M67.12,38.075v5.203h17.438v-5.203H67.12z" style="fill:#F1F2F2;"/>
                     </g>
                 </svg>       
-            </a></li>
+            </a>
             <!--Instagram-->
-            <li><a href="https://www.instagram.com/louiedizzle89/">
-                <svg id="Capa_3" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style type="text/css">
+            <a href="https://www.instagram.com/louiedizzle89/">
+                <svg class="social-icons" id="Capa_3" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style type="text/css">
                     .st0{fill:url(#SVGID_1_);}
                     .st1{fill:#FFFFFF;}
                 </style><g><lineargradient gradientTransform="matrix(16.0027 -27.7174 27.7174 16.0027 -878.9595 -482.2268)" 
@@ -119,10 +112,9 @@
                     <path class="st1" d="M21.3,9.4c0.6,0,1.1,0.5,1.1,1.2s-0.5,1.2-1.1,1.2s-1.1-0.5-1.1-1.2S20.7,9.4,21.3,9.4z"/>
                 </g>
             </svg>
-            </a></li>
-            </ul>
-        </nav>
-        <p>Copyright 2022</p>
+            </a>
+        </span>
+        <p>Copyright 2023</p>
     </div>
     </footer>
 </body>
