@@ -9,26 +9,31 @@
 </head>
 <body>
 <!--Header-->
+<header>
+<div id="hero" class="hero">
 <img class="logo" src="img/logo/wp-portfolio-logo.png" alt="logo">
-<span class="nav-links">
-        <a href="index.html">Work</a>
-        <a href="about.html">About</a>
-        <a href="#contact">Contact</a>
-</span>
+<nav class="navlinks">
+    <ul>    
+        <li><a href="index.html">Work</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav> 
+</div>
 <div>
     <div>
-        <h2>Hi, my name is Christina Louie!</h2> 
+        <h2>Hi, my name is Christina Louie!</h2>
         <span>I'm a UI/UX Designer from Texas, USA.</span>
-    <p>I have had 10+ years experience as a Senior Business Analyst in the Mortgage and Oil/Gas [&] Energy industries. Excellent reputation for resolving problems and improving customer satisfaction through UI/UX designs.</p>
+    <p>I have had 10+ years experience as a Senior Business Analyst in the Mortgage and Oil/Gas and Energy industries. Excellent reputation for resolving problems and improving customer satisfaction through UI/UX designs.</p>
     </div>
 </div>
+</header>
 <!--Body-->
 <main id="body">
-<div>
-    <div class="proj-container">
+<div id ="work" class="container">
         <h1>My Work</h1>
         <!--Pocket Prosperity-->
-        <div class="container-section"><!--open row that holds (2) columns for the projects-->
+        <div class="row"><!--open row that holds (2) columns for the projects-->
             <div class="section-left"><!--open first column (used for image)-->
                 <picture>
                     <source srcset="img/projects/pocket-prosperity/logos/pp-logo.png" media="(max-width:767px)">
@@ -43,7 +48,7 @@
             </div>
         </div>
             <!--MyRecipes-->
-            <div class="container-section">
+            <div class="row">
             <div class="section-left"><!--open first column (used for image)-->
                 <picture>
                     <source srcset="img/projects/myrecipes/logos/myrecipes-logo.png" media="(max-width:767px)">
@@ -54,14 +59,14 @@
                 <h2>MyRecipes</h2> <!--heading for the project-->
                 <p>A web-responsive app to allow users to personalize and organize recipes saved for meal prepping and gatherings.</p>
                 <p>The designs were developed using Sketch. </p>
-                <a href="">Read more</a><!-- button or link label -->
+                <a href="myrecipes.html" class="button">Read more</a><!-- button or link label -->
             </div>
         </div>
     </div>
-</div>
 </main>
 <!--Footer-->
 <footer id="contact">
+<div class="container">
 <div class="footer">
     <h1>Get in Touch</h1>
     <p>Need a UI/UX designer? Contact me by the following options! Happy to help!</p>
@@ -114,6 +119,7 @@
         </a>
     </span>
     <p>Copyright 2023</p>
+</div>
 </div>
 </footer>
 </body>

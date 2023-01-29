@@ -1,11 +1,32 @@
+header{
+    background-color: #f5f5f5;
+    border-bottom: 3px solid #f5f5f5;
+    position:static, center;
+    text-align: center;
+}
+#hero {
+    background-color: #ECF6F5;
+    position:static, center;
+    text-align:center;
+    margin: 10px 5px; /* 25px top and bottom, 0 left and right */
+    display: inline-block;
+    width: 100%;
+    box-shadow: -2px 22px 9px -16px rgba(0,0,0,0.10);
+    
+}
 body {
-    background-color: whitesmoke;
+    background-color: #f5f5f5;
+    padding-top: 10px;
+    padding-right: 5px;
+    padding-bottom: 15px;
+    padding-left: 5px;
     font-family: 'Almarai', sans-serif;
     font-size: 16px; /* Sets the font size to 16px */
     font-weight: 300; /* Sets the font weight to 300 */
     line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
     color: #4a4a4a;
-    margin: 10px 50px 20px;
+    border-bottom: 3px solid #f5f5f5;
+    position: static;
 }
 /*Heading styles*/
 h1, 
@@ -19,11 +40,15 @@ h1 {
     font-size: 2.75em;
     font-weight: 700;
     color: #FF8484;
+    position:static, center;
+    text-align: center;
 }
 h2 {
     font-size: 2.00em;
     font-weight: 700;
     color: #231651;
+    position:static, center;
+    text-align: center;
 }
 h3 {
     font-size: 1.75em;
@@ -56,11 +81,11 @@ a:active { /* selected link */
 .button {
     display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
     color: #36B4A5;
-    color: #ffffff; /* needed to override the default link color */
+    color: #231651; /* needed to override the default link color */
     font-weight: 400;
     padding: 10px;
     border-radius: 3px;
-    border-bottom: 2px solid #994c30; /* width of the border, type, color */
+    border: 2px solid #36B4A5; /* width of the border, type, color */
     transition: 0.2s opacity;
 }
 .button:hover {
@@ -82,28 +107,35 @@ a:active { /* selected link */
     color: #ffffff;
 }
 .logo{
-    width: 80px;
+    width: 100px;
     height: auto;
     max-width:100%;
+    position:static, left;
 }
-.nav-links{
-    float:right;
+.container {
+    padding-top: 10px;
+    padding-right: 5px;
+    padding-bottom: 15px;
+    padding-left: 5px;
 }
-.proj-container{
-    border: 3px;
-    padding: 20px;
-}
-.container-section{
-    width: 50%;
-    float: left;
+.row{
+    width: 300px;
+    height: 450px;
     padding: 10px;
-    border: 2px;
+    border-bottom: 1px solid #f5f5f5;
+    position:static, center;
 }
 .section-left{
-    float:left;
+    position:static, left;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #f5f5f5;
 }
 .section-right{
-    float:right;
+    position:static, right;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #f5f5f5;
 }
 .social-icons{
     width: 30px;
@@ -116,18 +148,37 @@ a:active { /* selected link */
     max-width:100%;
 }
 .footer{
+    background-color: #ECF6F5;
     position:relative;
-    bottom: 5px;
+    margin: 10px 5px; /* 25px top and bottom, 0 left and right */
+    text-align: center;
 }
 .project-headerimg{
-    width: 600px;
-    height: auto;
-    max-width:100%;
-    margin: 10px 50px 20px;
+    max-width: 100%;
+    margin: 10px, 5px;
+    position: static, center;
 }
 .project-img{
-    width: 500px;
+    width: 300px;
     height: auto;
     max-width:100%;
-    margin: 10px 50px 20px;
+    margin: 10px, 5px;
+}
+#work.row {
+    margin: 5px 0; /* 25px top and bottom, 0 left and right */
+    border-bottom: 1px solid #4a4a4a;
+}
+nav > ul {
+    list-style-type: none;
+    padding: 0;
+    max-width: 320px;
+}
+nav > ul > li {
+    display: inline-block;
+}
+nav > ul > li > a {
+    padding: 0 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #4a4a4a;
 }
