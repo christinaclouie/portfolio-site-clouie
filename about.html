@@ -23,25 +23,25 @@
 </header>
 <!--About Me-->
 <main>
-<div> <!--Main Container-->
+    <div id ="about" class="container"> <!--Main Container-->
     <div> <!--About-->
-        <h1>About</h1>
-    <picture>
-        <source class="profile-photo" srcset="img/profile-photo/profile-photo.png" media="(max-width:300px)">
-        <img class="profile-photo" src="img/profile-photo/profile-photo-2x.png" alt="profile-photo">
-    </picture>
-    <div><!--My Story and Skills & Tools-->
-        <div> <!--My Story-->
-            <h2>My Story</h2>
+        <h1>About Me</h1>
+        <picture>
+            <source class="profile-photo" srcset="img/profile-photo/profile-photo.png" media="(max-width:300px)">
+            <img class="profile-photo" src="img/profile-photo/profile-photo-2x.png" alt="aboutprofile-photo">
+        </picture>
+    <div id="intro"><!--Intro and Skills & Tools-->
+        <div> <!--Intro-->
+            <p>Hi - nice to meet you!</p>
             <p>My name is Christina Louie and located in Texas, USA. I am currently a Senior Business Analyst at a global IT consulting company helping customers to solve business problems and improve their user experience.</p>
-            <p>I graduated from the University of Houston in 2011 with a degree in Management Information Systems (MIS). Through my years of experience as a Business Analyst in the IT industry, my interest for UI/UX design grew.  I have been helping clients across the globe in developing applications to improve their work experience by automating daily activities.</p>
+            <p>I graduated from the University of Houston in 2011 with a degree in Management Information Systems (MIS). Through my years of experience as a Business Analyst in the IT industry, my interest for UI/UX design grew.  
+            I have been helping clients across the globe in developing applications to improve their work experience by automating daily activities.</p>
             <p>When I'm not designing, you can find me hanging out with my dog, Delilah, watching Lego Masters, playing Tetris, doing yoga, or going on photography adventures.</p>
-            <p><a href="files/christina-louie-cv.pdf" target="_blank" download>Download my CV</a></p>
         </div>  
-        <div class="container-section"><!--Skills & Tools-->
-            <div class="section-left"> <!--Skills-->
-                <h3>Relevant Skills</h3>
-                    <ul>
+        <div class="row"><!--Skills & Tools-->
+            <div class="col-md-6 col-lg-8 col-xl-4"> <!--Skills-->
+                <h2>Relevant Skills</h2>
+                    <ul class="skillsntools">
                         <li>Competitive Analysis</li>
                         <li>UX Research</li>
                         <li>User Personas</li>
@@ -53,9 +53,9 @@
                         <li>Frontend Development</li>
                     </ul>
             </div> <!--End Skills-->
-            <div class="section-right"> <!--Tools-->
-                <h3>Tools</h3>
-                    <ul>
+            <div class="col-md-6 col-lg-8 col-xl-4"> <!--Tools-->
+                <h2>Tools</h2>
+                    <ul class="skillsntools">
                         <li>Adobe XD</li>
                         <li>Sketch</li>
                         <li>Figma</li>
@@ -63,7 +63,14 @@
                     </ul>
             </div> <!--End Tools-->
         </div>  <!--End Skiils & Tools-->
+        <div id="resume">
+            <span><a class="button" href="files/christina-louie-cv.pdf" target="_blank" download>
+                <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg> Download my CV</a>
+            </span>
+        </div>
         </div> <!--End My Story and Skills & Tools-->
+
     </div> <!--End About-->
 </div> <!--End Main Container-->
 </main>
@@ -72,8 +79,11 @@
     <div class="footer">
         <h1>Get in Touch</h1>
         <p>Need a UI/UX designer? Contact me by the following options! Happy to help!</p>
-        <p><a href="mailto:christinaclouie@gmail.com" class="button contact">Send me an Email</a></p>
-        <p><a href="about.html#skills">My Skills</a></p>
+        <div class="row">
+            <div class="col-md-6 col-lg-8 col-xl-4"></div>
+            <p><a href="mailto:christinaclouie@gmail.com" class="button-contact">Send me an Email</a></p>
+            <p><a href="about.html#skills">My Skills</a></p>
+        </div>
         <span>
             <!--LinkedIn-->
             <a href="https://www.linkedin.com/in/christinaclouie/" target="_blank">
