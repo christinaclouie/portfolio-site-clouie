@@ -1,33 +1,38 @@
-<!DOCTYPE html> <html lang="en" dir="ltr">
-<head> <meta charset="utf-8">
-<title> Christina Louie </title>
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-<link rel="stylesheet" type="text/css" href="css/style.css">
-<link href="https://fonts.googleapis.com/css2?family=Almarai&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&family=Almarai&display=swap" rel="stylesheet">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html> 
+<html lang="en" dir="ltr">
+<head> 
+    <meta charset="utf-8">
+    <title> Christina Louie </title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Almarai&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&family=Almarai&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://kit.fontawesome.com/85922927da.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <!--Header-->
 <header>
-<div id="hero" class="hero">
-<img class="logo" src="img/logo/wp-portfolio-logo.png" alt="logo">
-<nav class="navlinks">
-    <ul>    
-        <li><a href="index.html">Work</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav> 
-</div>
-<div class="container">
-    <img class="fill" src="img/background/mountain-sunset.jpg" alt="header-bg">
-    <div class="header-top">
-        <h2>Hi, my name is Christina Louie!</h2>
+<div id="nav" class="nav">
+    <div id="myNavtoggle" class="navtoggle">
+        <img class="logo" src="img/logo/wp-portfolio-logo.png" alt="logo">
+        <nav class="navlinks">
+            <ul>    
+                <li><a href="index.html">Work</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+                <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+            </ul>
+        </nav> 
     </div>
-    <div class="header-centered">
-        <span>I'm a UI/UX Designer from Texas, USA.</span>
-        <p>I have had 10+ years experience as a Senior Business Analyst in the Mortgage and Oil/Gas and Energy industries. Excellent reputation for resolving problems and improving customer satisfaction through UI/UX designs.</p>
+</div>
+<div class="hero-image">
+    <div class="hero-text">
+        <h2>Hi, my name is Christina Louie!</h2>
+            <div class="hero-textborder">
+                <span>I'm a UI/UX Designer from Texas, USA.</span>
+                <p>I have had 10+ years experience as a Senior Business Analyst in the Mortgage and Oil/Gas and Energy industries. Excellent reputation for resolving problems and improving customer satisfaction through UI/UX designs.</p>
+            </div>
     </div>
 </div>
 </header>
@@ -433,9 +438,7 @@
             </div><!--end first column-->
     </div>
     </div>
-    <script src="js/scripts.js"></script>
 </main>
-</body>
 <!--Footer-->
 <footer id="contact">
 <div class="container">
@@ -494,4 +497,7 @@
 </div>
 </div>
 </footer>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<script src="js/scripts.js"></script>
+</body>
 </html>
