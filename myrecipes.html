@@ -1,51 +1,53 @@
 <!DOCTYPE html> <html lang="en" dir="ltr">
-<head> <meta charset="utf-8">
-<title> MyRecipes </title>
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-<link rel="stylesheet" type="text/css" href="css/style.css">
-<link href="https://fonts.googleapis.com/css2?family=Almarai&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&family=Almarai&display=swap" rel="stylesheet">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<head> 
+    <meta charset="utf-8">
+    <title> MyRecipes </title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Almarai&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&family=Almarai&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://kit.fontawesome.com/85922927da.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <!--Header-->
 <header class="hero">
-    <div id="nav" class="nav">
-        <div id="myNavtoggle" class="navtoggle">
-            <img class="logo" src="img/logo/wp-portfolio-logo.png" alt="logo">
-            <nav class="navlinks">
-                <ul>    
-                    <li><a href="index.html">Work</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
-                    <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
-                </ul>
-            </nav> 
+<div id="nav" class="nav">
+    <div id="myNavtoggle" class="navtoggle">
+        <img class="logo" src="img/logo/wp-portfolio-logo.png" alt="logo">
+        <nav class="navlinks">
+            <ul>    
+                <li><a href="index.html">Work</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+                <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+            </ul>
+        </nav> 
+    </div>
+</div>
+<div>
+    <picture>
+        <source srcset="img/projects/myrecipes/assets/mr_topborder.png" media="(max-width:767px)">
+        <img src="img/projects/myrecipes/assets/mr_topborder@2x.png" alt="mr-topborder">
+    </picture>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-lg-8 col-xl-4">
+            <picture>
+                <source class="project-img" srcset="img/projects/myrecipes/logos/myrecipes-logo.png" media="(max-width:767px)">
+                <img class="project-img" src="img/projects/myrecipes/logos/myrecipes-logo@2x.png" alt="mr-logo">
+            </picture>
+            <p>A web-responsive app to allow users to personalize and organize recipes saved for meal prepping and gatherings.</p>
+        </div>
+        <div class="col-md-6 col-lg-8 col-xl-4">
+            <picture>
+                <source class="overview-img" srcset="img/projects/myrecipes/assets/mr-firstlook.png" media="(max-width:767px)">
+                <img class="overview-img" src="img/projects/myrecipes/assets/mr-firstlook@2x.png" alt="mr-firstlook">
+            </picture>
         </div>
     </div>
-    <div>
-        <picture>
-            <source srcset="img/projects/myrecipes/assets/mr_topborder.png" media="(max-width:767px)">
-            <img src="img/projects/myrecipes/assets/mr_topborder@2x.png" alt="mr-topborder">
-        </picture>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-lg-8 col-xl-4">
-                <picture>
-                    <source class="project-img" srcset="img/projects/myrecipes/logos/myrecipes-logo.png" media="(max-width:767px)">
-                    <img class="project-img" src="img/projects/myrecipes/logos/myrecipes-logo@2x.png" alt="mr-logo">
-                </picture>
-                <p>A web-responsive app to allow users to personalize and organize recipes saved for meal prepping and gatherings.</p>
-            </div>
-            <div class="col-md-6 col-lg-8 col-xl-4">
-                <picture>
-                    <source class="overview-img" srcset="img/projects/myrecipes/assets/mr-firstlook.png" media="(max-width:767px)">
-                    <img class="overview-img" src="img/projects/myrecipes/assets/mr-firstlook@2x.png" alt="mr-firstlook">
-                </picture>
-            </div>
-        </div>
-    </div>
+</div>
 </header>
 <!--Body-->
 <main>
@@ -187,8 +189,7 @@
 <footer id="contact">
     <div class="footer">
         <h1>Get in Touch</h1>
-        <p>Need a UI/UX designer? Contact me by the following options! Happy to help!</p>
-        <p><a href="mailto:christinaclouie@gmail.com" class="button-contact">Send me an Email</a></p>
+        <a href="mailto:christinaclouie@gmail.com" class="button-contact">Send me an Email</a>
         <p><a href="about.html#skills">My Skills</a></p>
         <span>
             <!--LinkedIn-->
@@ -238,7 +239,7 @@
         </span>
         <p>Copyright 2023</p>
     </div>
-</footer>
+    </footer>
 <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 <script src="js/scripts.js"></script>
 </body>

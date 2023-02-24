@@ -1,67 +1,74 @@
 /* ==============================
 Small devices (320px and smaller)
 ================================= */
+*{
+    box-sizing: border-box;
+}
 header{
     background-color: #f5f5f5;
-    border-bottom: 3px solid #f5f5f5;
-    padding: 10px 0 4px;
+    text-align: center;
+    padding: 10px 0;
 }
 .logo {
     width: 100px;
-    height: auto;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 2.5em;
 }
-main {
-    padding-top: 56px;
+nav {
+    display: inline-block;
+    width: 100%;
+}
+nav > ul {
+    list-style-type: none;
+    padding: 0;
+}
+nav > ul > li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0;
+}
+nav > ul > li > a {
+    display: inline-block;
+    padding: 0 15px;
+    color: #4a4a4a;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 .navtoggle {
-    background-color: #ECF6F5;
-    text-align: center;
-    margin: 10px 5px; 
-    display: flex;
+    background-color: #ECF6F5; 
+    text-align: left;
     width: 100%;
-    height:fit-content;
+    /*height:fit-content;*/
     box-shadow: -2px 22px 9px -16px rgba(0,0,0,0.10);
     align-items: center;
     justify-content: space-between;
 }
-.navtoggle li:not( :last-child) {
+.navtoggle li:not(:last-child) {
     display:none;
-}
-.navtoggle li:last-child {
-    padding: 0 0 10px;
 }
 .navtoggle, .navtoggle.responsive {
     position: relative;
 }
+/* our hamburger menu */
 .navtoggle li .icon {
     position: absolute;
     right: 0;
     top: 2px;
-    font-size: 24px;
+    font-size: 20px;
     padding: 10px 0;
     margin: 20px 20px;
 }
 .navtoggle.responsive nav {
     padding: 24px 0 0;
 }
-.navtoggle.responsive li{
+.navtoggle.responsive li {
     display: block;
     padding: 10px 0;
     border-top: 1px solid rgba(255,127,80,0.5);
 }
-nav > ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-nav > ul > li {
-    display: inline-block;
-}
-nav > ul > li > a {
-    padding: 0 10px;
-    text-transform: uppercase;
-    font-weight: 500;
-    color: #4a4a4a;
+.navtoggle.responsive li:last-child {
+    padding: 0 0 10px;
 }
 .hero-image {
     background-image: url("file:///Users/christinalouie/Library/Mobile%20Documents/com~apple~CloudDocs/CareerFoundry/Frontend%20Development/portfolio-site-clouie/img/background/mountain-sunset.jpg");
@@ -139,13 +146,12 @@ h2 {
     text-align: center;
 }
 h3 {
-    font-size: 1.30em;
+    font-size: 1.00em;
     font-weight: bold;
-    margin: 20px;
-    color: #f5f5f5;
-    background-color: #231651;
+    color: #000000;
+    margin: 30px 0px; 
     border-radius: 10px;
-    text-align: center;
+    text-align: left;
 }
 /*Image width for web responsive sizes*/
 img { 
@@ -191,10 +197,6 @@ a:active { /* selected link */
     margin-top: 30px;
     margin-bottom: 30px;
     padding: 20, 0;
-    border-style: solid;
-    border-color: #d3d0d0;
-    border-radius: 10px;
-    box-shadow: -2px 22px 9px -16px rgba(0,0,0,0.10);
 }
 .row::after {
     content: "";
@@ -214,15 +216,15 @@ a:active { /* selected link */
 }
 .footer {
     background-color: #ECF6F5;
-    margin: 10px 5px;
     text-align: center;
+    padding: 10px 0;
 }
 .project-headerimg {
     max-width:50%;
     margin: 10px, 5px;
 }
 .project-img {
-    max-width:90%;
+    max-width:100%;
     padding: 10px;
     display: block;
     margin-left: auto;
@@ -230,7 +232,7 @@ a:active { /* selected link */
     margin-bottom: 10px;
 }
 .overview-img {
-    max-width:50%;
+    max-width:80%;
     padding: 10px;
     display: block;
     margin-left: auto;
@@ -247,7 +249,7 @@ a:active { /* selected link */
 }
 .skillsntools {
     list-style-type: none;
-    padding: 0;
+    padding: 0px 20px;
 }
 #intro {
     margin: 10px;
@@ -308,14 +310,20 @@ Medium devices (640px and larger)
         min-width: 150px;
         height: auto;
     }
-    .navtoggle li:not( :last-child) {
-        display:inline-block;
+    nav{
+        width: auto;
+        float: right;
+        margin-top: 4px;
+    }
+    nav > ul > li {
+        display: inline-block;
+        position: relative;
+    }
+    .navtoggle li:not(:last-child) {
+        display: inline-block;
     }
     .navtoggle li:last-child {
         display: none;
-    }
-    nav > ul {
-        margin: 1em 0;
     }
 }
 /* ==============================
