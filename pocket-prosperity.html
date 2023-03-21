@@ -12,27 +12,28 @@
 <body>
 <!--Header-->
 <header class="hero">
-<div id="nav" class="nav">
-    <div id="myNavtoggle" class="navtoggle">
-    <img class="logo" src="img/logo/wp-portfolio-logo.png" alt="logo">
-    <nav class="navlinks">
-        <ul>    
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
-            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
-        </ul>
-    </nav> 
+    <div id="nav" class="nav">
+        <div id="myNavtoggle" class="navtoggle">
+            <a href="index.html"><img class="logo" src="img/logo/wp-portfolio-logo.png" alt="logo"></a>
+            <nav class="navlinks">
+                <ul>    
+                    <li><a href="index.html#work">Projects</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="files/christina-louie-cv.pdf" target="_blank">Resume</a></li>
+                    <li><a href="contact.html" onclick="menuToggle()">Contact</a></li>
+                    <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+                </ul>
+            </nav> 
+        </div>
     </div>
-</div>
 <div>
     <div>
         <picture>
             <source srcset="img/projects/pocket-prosperity/assets/pp-topborder.png" media="(max-width:300px)">
             <img src="img/projects/pocket-prosperity/assets/pp-topborder@2x.png" alt="pp-topborder">
             <p>
-                <source class="project-headerimg" srcset="img/projects/pocket-prosperity/logos/pp-logo.png" media="(max-width:767px)">
-                <img class="project-headerimg" src="img/projects/pocket-prosperity/logos/pp-logo-2x.png" alt="pp-logo">
+                <source class="project-headerimg" srcset="img/projects/pocket-prosperity/logos/pocketprosperity-logo.png" media="(max-width:767px)">
+                <img class="project-headerimg" src="img/projects/pocket-prosperity/logos/pocketprosperity-logo-2x.png" alt="pp-logo">
             </p>
         </picture>
         <span>An online tool developed to guide users through their finances to meet their savings goals.</span>
@@ -48,7 +49,7 @@
             <img class="overview-img" src="img/projects/pocket-prosperity/assets/overview-phones@2x.png" alt="overview-phones">
         </picture>
         <h2>Overview</h2>
-        <span>Through my experience with managing and budgeting finances, I am usually logging into the different banking and investment websites or apps to view my balance and spending habits. 
+        <span class="project-text">Through my experience with managing and budgeting finances, I am usually logging into the different banking and investment websites or apps to view my balance and spending habits. 
             I will then consolidate the financials into a spreadsheet to track monthly savings to compare against my saving goals.</span>
     </div>
     <div class="row">
@@ -68,7 +69,7 @@
             </span>
         </div>
     </div>
-    <div class="container">
+    <div>
         <div>
             <div>
                 <h2>Brand Guidelines</h2>
@@ -166,11 +167,21 @@
 </div>
 </main>
 <!--Footer-->
-<footer id="contact">
+<footer>
     <div class="footer">
-        <h1>Get in Touch</h1>
-        <a href="mailto:christinaclouie@gmail.com" class="button-contact">Send me an Email</a>
-        <p><a href="about.html#skills">My Skills</a></p>
+        <a href="mailto:christinaclouie@gmail.com">Send me an Email</a>
+            <p>
+            <!--Email-->
+            <a href="mailto:christinaclouie@gmail.com/">
+                <svg width="51" height="31" viewBox="0 0 51 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M48.7552 0.539268H2.82057H2.4222H1.45541H0.789459V30.5393H50.7895V0.539268H49.06H48.7552ZM46.7553 2.41431L27.4388 
+                    20.5232C26.558 21.3489 25.0207 21.3489 24.1399 20.5232L4.82054 2.41431H46.7553ZM2.78933 3.16124L15.7756 15.3339L2.78933 
+                    27.5085V3.16124ZM4.38501 28.6639L17.1907 16.6606L22.7259 21.8488C23.5433 22.6161 24.6321 23.0391 25.7894 23.0391C26.9466 
+                    23.0391 28.0354 22.6161 28.8528 21.8488L34.388 16.6597L47.1927 28.6639H4.38501ZM48.7895 27.5095L35.8031 15.334L48.7894 3.1586L48.7895 27.5095Z" style="fill:#F1F2F2;"/>
+                </svg>  
+            </a>
+            </p>
+        <p>
         <span>
             <!--LinkedIn-->
             <a href="https://www.linkedin.com/in/christinaclouie/" target="_blank">
@@ -216,10 +227,10 @@
                 </g>
             </svg>
             </a>
-        </span>
+        </span></p>
         <p>Copyright 2023</p>
     </div>
-    </footer>
+</footer>
 <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 <script src="js/scripts.js"></script>
 </body>

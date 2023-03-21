@@ -15,12 +15,13 @@
 <header>
 <div id="nav" class="nav">
     <div id="myNavtoggle" class="navtoggle">
-        <img class="logo" src="img/logo/wp-portfolio-logo.png" alt="logo">
+        <a href="index.html"><img class="logo" src="img/logo/wp-portfolio-logo.png" alt="logo"></a>
         <nav class="navlinks">
             <ul>    
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+                <li><a href="#work">Projects</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="files/christina-louie-cv.pdf" target="_blank">Resume</a></li>
+                <li><a href="contact.html" onclick="menuToggle()">Contact</a></li>
                 <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
             </ul>
         </nav> 
@@ -29,47 +30,43 @@
 <div class="hero-image">
     <div class="hero-text">
         <h2>Hi, my name is Christina Louie!</h2>
-            <div class="hero-textborder">
+            <!-- <div class="hero-textborder">
                 <span>I'm a UI/UX Designer from Texas, USA.</span>
                 <p>I have had 10+ years experience as a Senior Business Analyst in the Mortgage and Oil/Gas and Energy industries. Excellent reputation for resolving problems and improving customer satisfaction through UI/UX designs.</p>
-            </div>
+            </div> -->
     </div>
 </div>
 </header>
 <!--Body-->
 <main id="body">
-    <div id ="work" class="container">
-        <h1>My Work</h1>
-        <!--Pocket Prosperity-->
+    <div id ="work" class="div-container">
+        <h1>My Projects</h1>
         <div class="row"><!--open row that holds (2) columns for the projects-->
             <div class="col-md-6 col-lg-8 col-xl-4"><!--open first column (used for image)-->
-                <picture>
-                    <source class="project-img" srcset="img/projects/pocket-prosperity/logos/pp-logo.png" media="(max-width:767px)">
-                    <img class="project-img" src="img/projects/pocket-prosperity/logos/pp-logo-2x.png" alt="pocket-prosperity">
-                </picture>
+                <a href="pocket-prosperity.html">
+                <picture class="table-cell">
+                    <source class="project-img" srcset="img/projects/pocket-prosperity/logos/pp-logo.png" media="(max-width:640px)">
+                    <img class="project-img" src="img/projects/pocket-prosperity/logos/pp-logo@2x.png" alt="pocket-prosperity">
+                </picture></a>
             </div><!--end first column-->
             <div class="col-md-6 col-lg-8 col-xl-4"><!--open second column (used for text)-->
-                <p>An online tool developed to guide users through their finances to meet their savings goals.</p>
-                <p>The designs were developed using Figma.</p>
-                <a class="button" href="pocket-prosperity.html">Read more</a><!-- button or link label -->
+                <p class="project-text">An online tool developed to guide users to meet their financial goals.</p>
             </div>
         </div>
-        <!--MyRecipes-->
-        <div class="row">
+        <div class="row"><!--open row that holds (2) columns for the projects-->
             <div class="col-md-6 col-lg-8 col-xl-4"><!--open first column (used for image)-->
-                <picture>
-                    <source class="project-img" srcset="img/projects/myrecipes/logos/myrecipes-logo.png" media="(max-width:767px)">
-                    <img class="project-img" src="img/projects/myrecipes/logos/myrecipes-logo@2x.png" alt="myrecipes">
-                </picture>
+                <a href="myrecipes.html">
+                    <picture class="table-cell">
+                        <source class="project-img" srcset="img/projects/myrecipes/logos/mr-logo.png" media="(max-width:640px)">
+                        <img class="project-img" src="img/projects/myrecipes/logos/mr-logo@2x.png" alt="myrecipes">
+                    </picture></a>
             </div><!--end first column-->
             <div class="col-md-6 col-lg-8 col-xl-4"><!--open second column (used for text)-->
-                <p>A web-responsive app to allow users to personalize and organize recipes saved for meal prepping and gatherings.</p>
-                <p>The designs were developed using Sketch. </p>
-                <a href="myrecipes.html" class="button">Read more</a><!-- button or link label -->
+                <p class="project-text">A web-responsive app to allow users to personalize and organize recipes.</p>
             </div>
         </div>
         <!--Animation-->
-        <div><!--open row that holds (2) columns for the projects-->
+        <div class="animation-text"><!--open row that holds (2) columns for the projects-->
         <h2>Let's blast off into the UI/UX design journey together!</h2>
         <div class="animation-row">
             <div class="animation-img">
@@ -438,11 +435,21 @@
     </div>
 </main>
 <!--Footer-->
-<footer id="contact">
+<footer>
 <div class="footer">
-    <h1>Get in Touch</h1>
-    <a href="mailto:christinaclouie@gmail.com" class="button-contact">Send me an Email</a>
-    <p><a href="about.html#skills">My Skills</a></p>
+    <a href="mailto:christinaclouie@gmail.com">Send me an Email</a>
+        <p>
+        <!--Email-->
+        <a href="mailto:christinaclouie@gmail.com/">
+            <svg width="51" height="31" viewBox="0 0 51 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M48.7552 0.539268H2.82057H2.4222H1.45541H0.789459V30.5393H50.7895V0.539268H49.06H48.7552ZM46.7553 2.41431L27.4388 
+                20.5232C26.558 21.3489 25.0207 21.3489 24.1399 20.5232L4.82054 2.41431H46.7553ZM2.78933 3.16124L15.7756 15.3339L2.78933 
+                27.5085V3.16124ZM4.38501 28.6639L17.1907 16.6606L22.7259 21.8488C23.5433 22.6161 24.6321 23.0391 25.7894 23.0391C26.9466 
+                23.0391 28.0354 22.6161 28.8528 21.8488L34.388 16.6597L47.1927 28.6639H4.38501ZM48.7895 27.5095L35.8031 15.334L48.7894 3.1586L48.7895 27.5095Z" style="fill:#F1F2F2;"/>
+            </svg>  
+        </a>
+        </p>
+    <p>
     <span>
         <!--LinkedIn-->
         <a href="https://www.linkedin.com/in/christinaclouie/" target="_blank">
@@ -488,7 +495,7 @@
             </g>
         </svg>
         </a>
-    </span>
+    </span></p>
     <p>Copyright 2023</p>
 </div>
 </footer>
