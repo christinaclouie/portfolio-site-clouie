@@ -31,17 +31,25 @@
         <picture>
             <source srcset="img/projects/pocket-prosperity/assets/pp-topborder.png" media="(max-width:300px)">
             <img src="img/projects/pocket-prosperity/assets/pp-topborder@2x.png" alt="pp-topborder">
-            <p>
-                <source class="project-headerimg" srcset="img/projects/pocket-prosperity/logos/pocketprosperity-logo.png" media="(max-width:767px)">
-                <img class="project-headerimg" src="img/projects/pocket-prosperity/logos/pocketprosperity-logo-2x.png" alt="pp-logo">
-            </p>
         </picture>
+        <p> <picture>
+            <source class="project-headerimg" srcset="img/projects/pocket-prosperity/logos/pocketprosperity-logo.png" media="(max-width:767px)">
+            <img class="project-headerimg" src="img/projects/pocket-prosperity/logos/pocketprosperity-logo-2x.png" alt="pp-logo">
+        </picture> </p>
         <span>An online tool developed to guide users through their finances to meet their savings goals.</span>
     </div>
 </div>
 </header>
 <!--Body-->
 <main>
+<div>
+    <button onclick="topFunction()" id="backtotop">
+        <picture>
+            <source class="backtotop" srcset="img/icons/up.png" media="(max-width:767px)">
+            <img class="backtotop" src="img/icons/up@2x.png" alt="backtotop">
+        </picture> 
+    </button>
+</div>
 <div class="container">
     <div id="overview" class="row">
         <picture>
@@ -49,31 +57,31 @@
             <img class="overview-img" src="img/projects/pocket-prosperity/assets/overview-phones@2x.png" alt="overview-phones">
         </picture>
         <h2>Overview</h2>
-        <span class="project-text">Through my experience with managing and budgeting finances, I am usually logging into the different banking and investment websites or apps to view my balance and spending habits. 
-            I will then consolidate the financials into a spreadsheet to track monthly savings to compare against my saving goals.</span>
+        <div class="project-text">Through my experience with managing and budgeting finances, I am usually logging into the different banking and investment websites or apps to view my balance and spending habits. 
+            I will then consolidate the financials into a spreadsheet to track monthly savings to compare against my saving goals.</div>
     </div>
     <div class="row">
         <div class="col-md-6 col-lg-8 col-xl-4">
             <h2>Problem</h2>
-            <span>Users typically access multiple websites or apps to manage their finances. Although there are other apps to integrate other financial accounts, there is still a fear whether their 
-                financial details will be security protected. Therefore, causing users to manually track and calculate total monthly savings, saving goals progression. and where to reduce expenditures.</span>
+            <div class="project-text">Users typically access multiple websites or apps to manage their finances. Although there are other apps to integrate other financial accounts, there is still a fear whether their 
+                financial details will be security protected. Therefore, causing users to manually track and calculate total monthly savings, saving goals progression. and where to reduce expenditures.</div>
         </div>
         <div class="col-md-6 col-lg-8 col-xl-4">
             <h2>Solution</h2>
-            <span>
+            <aside>
                 <ul>
-                    <p><li>Integration with existing accounts to view the consolidated financial data in a single location.</li></p>
-                    <p><li>Automated calculation of total monthly savings and saving goals progression based on accounts linked [&] amount entered to save.</li></p>
-                    <p><li>Automated logic to monitor spending habits and suggest which category to reduce expenditures.</li></p>
+                    <li>Integration with existing accounts to view the consolidated financial data in a single location.</li>
+                    <li>Automated calculation of total monthly savings and saving goals progression.</li>
+                    <li>Automated logic to monitor spending habits and suggest which category to reduce expenditures.</li>
                 </ul>
-            </span>
+            </aside>
         </div>
     </div>
     <div>
         <div>
             <div>
                 <h2>Brand Guidelines</h2>
-                <span>Developing a style guide helps build brand identity that can be recognized across all platforms. It can also be used to stay consistent and on brand through marketing assets.</span>
+                <div class="project-text">Developing a style guide helps build brand identity that can be recognized across all platforms. It can also be used to stay consistent and on brand through marketing assets.</div>
             </div>
             <div>
                 <picture>
@@ -97,7 +105,7 @@
     </div>
     <div>
         <h2>User Flow Diagram</h2>
-        <span>A user flow lays out the user’s movement through the product, mapping out each and every step the user takes—from entry point right through to the final interaction.</span>
+        <div class="project-text">A user flow lays out the user’s movement through the product, mapping out each and every step the user takes—from entry point right through to the final interaction.</div>
         <p>
             <picture>
                 <source class="project-img" srcset="img/projects/pocket-prosperity/assets/user-flow.png" media="(max-width:767px)">
@@ -108,20 +116,20 @@
     <div>
         <div>
             <h2>UI Design</h2>
-            <span>The goal of user interface design is to create a user interface that makes it easy, efficient, and enjoyable for users to interact with a product. 
-                The designs move through an iterative process from low to medium to high-fidelity wireframes. </span>
+            <div class="project-text">The goal of user interface design is to create a user interface that makes it easy, efficient, and enjoyable for users to interact with a product. 
+                The designs move through an iterative process from low to medium to high-fidelity wireframes. </div>
         </div>
         <div>
-            <span><h3>01 As a user, I want to securely link my existing financial accounts to the app.</h3></span>
+            <h3 class="project-text">01 As a user, I want to securely link my existing financial accounts to the app.</h3>
             <p>
                 <picture>
-                    <source sclass="project-img" rcset="img/projects/pocket-prosperity/assets/01-onboarding.png" media="(max-width:767px)">
+                    <source class="project-img" srcset="img/projects/pocket-prosperity/assets/01-onboarding.png" media="(max-width:767px)">
                     <img class="project-img" src="img/projects/pocket-prosperity/assets/01-onboarding@2x.png" alt="onboarding-wireframes">
                 </picture>  
             </p>
         </div>
         <div>
-            <span><h3>02 As a user, I want to create a new savings goal.</h3></span>
+            <h3 class="project-text">02 As a user, I want to create a new savings goal.</h3>
             <p>
                 <picture>
                     <source class="project-img" srcset="img/projects/pocket-prosperity/assets/02-creating-goal.png" media="(max-width:767px)">
@@ -130,7 +138,7 @@
             </p>
         </div>
         <div>
-            <span><h3>03 As a user, I want to view my financial goals and progression in a dashboard.</h3></span>
+            <h3 class="project-text">03 As a user, I want to view my financial goals and progression in a dashboard.</h3>
             <p>
                 <picture>
                     <source class="project-img" srcset="img/projects/pocket-prosperity/assets/03-dashboard.png" media="(max-width:767px)">
@@ -142,11 +150,11 @@
     <div>
         <div>
             <h2>Mockups</h2>
-            <span>Developing mockups are useful for understanding and communicating what the final interface should look like and gives stakeholders a chance to 
-                review the design and style before committing to building the app in a functional prototype.</span>
+            <div class="project-text">Developing mockups are useful for understanding and communicating what the final interface should look like and gives stakeholders a chance to 
+                review the design and style before committing to building the app in a functional prototype.</div>
         </div>
         <div>
-            <span><h3>04 As a user, I want to view my financial goals and be able to update them.</h3></span>
+            <h3 class="project-text">04 As a user, I want to view my financial goals and be able to update them.</h3>
             <p>
                 <picture>
                     <source class="project-img" srcset="img/projects/pocket-prosperity/assets/04-update-goal.png" media="(max-width:767px)">
@@ -155,7 +163,7 @@
             </p>
         </div>
         <div>
-            <span><h3>05 As a user, I want to use the app across platforms (mobile, tablet, laptop).</h3></span>
+            <h3 class="project-text">05 As a user, I want to use the app across platforms (mobile, tablet, laptop).</h3>
             <p>
                 <picture>
                     <source class="project-img" srcset="img/projects/pocket-prosperity/assets/05-multiplatform.png" media="(max-width:767px)">
@@ -164,24 +172,21 @@
             </p>
         </div>
     </div>
+    <div class="other">
+        <h1>View Other Projects</h1>
+        <p>
+            <a href="myrecipes.html">
+                <picture>
+                    <img class="other-img" src="img/background/myrecipe-thumbnail.png" alt="other-mr">
+                </picture>
+            </a>
+        </p>
+    </div>
 </div>
 </main>
 <!--Footer-->
 <footer>
     <div class="footer">
-        <a href="mailto:christinaclouie@gmail.com">Send me an Email</a>
-            <p>
-            <!--Email-->
-            <a href="mailto:christinaclouie@gmail.com/">
-                <svg width="51" height="31" viewBox="0 0 51 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M48.7552 0.539268H2.82057H2.4222H1.45541H0.789459V30.5393H50.7895V0.539268H49.06H48.7552ZM46.7553 2.41431L27.4388 
-                    20.5232C26.558 21.3489 25.0207 21.3489 24.1399 20.5232L4.82054 2.41431H46.7553ZM2.78933 3.16124L15.7756 15.3339L2.78933 
-                    27.5085V3.16124ZM4.38501 28.6639L17.1907 16.6606L22.7259 21.8488C23.5433 22.6161 24.6321 23.0391 25.7894 23.0391C26.9466 
-                    23.0391 28.0354 22.6161 28.8528 21.8488L34.388 16.6597L47.1927 28.6639H4.38501ZM48.7895 27.5095L35.8031 15.334L48.7894 3.1586L48.7895 27.5095Z" style="fill:#F1F2F2;"/>
-                </svg>  
-            </a>
-            </p>
-        <p>
         <span>
             <!--LinkedIn-->
             <a href="https://www.linkedin.com/in/christinaclouie/" target="_blank">
@@ -227,7 +232,7 @@
                 </g>
             </svg>
             </a>
-        </span></p>
+        </span>
         <p>Copyright 2023</p>
     </div>
 </footer>

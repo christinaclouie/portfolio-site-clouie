@@ -97,11 +97,11 @@ nav > ul > li > a {
     opacity: 100%;
     max-width: 80%;
 }
-.hero-textborder{
+/*.hero-textborder{
     background-color:#f4f4f4b1;
     border-radius: 10px;
     width: 260px;
-}
+}*/
 body { 
     background-color: #ECF6F5;
     padding-top: 10px;
@@ -144,7 +144,7 @@ h1 {
     font-family: 'Alegreya Sans SC', sans-serif;
     font-size: 2.75em;
     font-weight: 700;
-    color: #FF8484;
+    color: #800000;
     text-align: center;
 }
 h2 {
@@ -204,6 +204,21 @@ a:active { /* selected link */
     opacity: 0.8; /* Reduces the opacity of the button to 80% */
     text-decoration: none;
 }
+#backtotop {
+    display: none; /*  Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #ECF6F5;   /* Set a background color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    border-radius: 100px; /* Rounded corners */
+    width: 40px;
+    height: 40px;
+    padding-top: 1%;
+}
 .container {
     margin: 25px;
 }
@@ -253,7 +268,7 @@ a:active { /* selected link */
     margin-right: auto;
     margin-bottom: 10px;
 }
-.project-text{
+.project-text {
     margin: 0px 20px;
 }
 .overview-img {
@@ -267,6 +282,16 @@ a:active { /* selected link */
     display: flex;
     align-items: center;
     height: 100%;
+}
+.view-other {
+    padding-top: 3%;
+    background-color: #fffdfd;
+}
+.other-img {
+    margin: 5% 25%;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 2px 10px 10px 2px #32313150;
 }
 #work {
     padding: 10px 0px;
@@ -332,6 +357,36 @@ a:active { /* selected link */
 .cloud {
     animation: 30s cloud-move infinite alternate linear;
 }
+.contact{
+    margin-left: 3%;
+}
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+
+    width: 80%; 
+    padding: 12px; /* Some padding */  
+    border: 1px solid #cccccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+  /* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #231651;
+    color: #ECF6F5;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  /* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #ECF6F5;
+    color: #231651;
+    border-color: #a6a6a6;
+}
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -345,7 +400,18 @@ Medium devices (640px and larger)
         height: auto;
         margin: 6px;
     }
-    nav{
+    h2 {
+        padding-top: 20px;
+    }
+    h3 {
+        font-size: 1.18em;
+        font-weight: bold;
+        color: #000000;
+        margin: 30px 0px; 
+        border-radius: 10px;
+        text-align: left;
+    }
+    nav {
         width: auto;
         float: right;
         margin-top: 4px;
@@ -365,17 +431,48 @@ Medium devices (640px and larger)
         border-radius: 10px;
         width: 350px;
     }
+    #backtotop {
+        display: none; /*  Hidden by default */
+        position: sticky; /* Fixed/sticky position */
+        bottom: 20px; /* Place the button at the bottom of the page */
+        right: 30px; /* Place the button 30px from the right */
+        z-index: 99; /* Make sure it does not overlap */
+        border: none; /* Remove borders */
+        outline: none; /* Remove outline */
+        background-color: #ECF6F5;   /* Set a background color */
+        cursor: pointer; /* Add a mouse pointer on hover */
+        border-radius: 100px; /* Rounded corners */
+        width: 70px;
+        height: 70px;
+    }
+    .overview-img{
+        width: 60%;
+    }
     .project-img{
-        width: 90%;
+        margin-top: 8%;
+        margin-bottom: 8%;
+        width: 70%;
         padding: 0px;
     }
-    .project-text{
-        padding: 10px;
+    .project-text {
+        margin: 10px 20px;
+        padding-top: 30px;
+        text-align: left;
+    }
+    .other-img {
+        margin: 2% 30%;
+        width: 40%;
+        border-radius: 10px;
+        border-color: #cccccc;
     }
     .animation-img { 
         max-width: 50%;
         margin-left: auto;
         margin-right: auto;
+    }
+    .contact{
+        margin-left: 3%;
+        margin-right: 10%;
     }
 }
 /* ==============================
@@ -385,6 +482,7 @@ Large devices (1024px or larger)
     .col-lg-8 {
         width: 50%;
         text-align: center;
+        padding: 0% 2%;
     }
     .header-top {
         position: absolute;
@@ -404,14 +502,53 @@ Large devices (1024px or larger)
         text-align: center;
         box-shadow: -2px 22px 9px -16px rgba(0,0,0,0.10);
     }
+    .hero-text {
+        text-align: center;
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #4a4a4a;
+        opacity: 100%;
+        max-width: 80%;
+    }
     h2 {
         font-size: 2.00em;
         font-weight: 600;
         color: #231651;
         text-align: center;
     }
+    #backtotop {
+        display: none; /*  Hidden by default */
+        position: fixed; /* Fixed/sticky position */
+        bottom: 20px; /* Place the button at the bottom of the page */
+        right: 30px; /* Place the button 30px from the right */
+        z-index: 99; /* Make sure it does not overlap */
+        border: none; /* Remove borders */
+        outline: none; /* Remove outline */
+        background-color: #ECF6F5;   /* Set a background color */
+        cursor: pointer; /* Add a mouse pointer on hover */
+        border-radius: 100px; /* Rounded corners */
+        width: 50px;
+        height: 50px;
+    }
     .project-img{
-        width: 70%;
+        width: 50%;
+    }
+    .project-text {
+        margin: 10px 20px;
+        padding-top: 40px;
+        text-align: left;
+    }
+    .view-other {
+        padding-top: 3%;
+        background-color: #fffdfd;
+    }
+    .other-img {
+        margin: 5% 35%;
+        width: 30%;
+        border-radius: 10px;
+        box-shadow: 2px 10px 10px 2px #32313150;
     }
     .animation-row {
         background-color: #1d2020;
@@ -421,6 +558,14 @@ Large devices (1024px or larger)
         margin-left: auto;
         margin-right: auto;
     }
+    .contact{
+        margin-left: 3%;
+        margin-right: 25%;
+    }
+    .skillsntools {
+        list-style-type: none;
+        padding: 0px 80px;
+    }
 }
 /* ==============================
 X-large devices (1440px or larger)
@@ -428,6 +573,8 @@ X-large devices (1440px or larger)
 @media only screen and (min-width: 1440px) {
     .col-xl-4 {
         width: 50%;
+        text-align: left;
+        padding: 0% 2%;
     }
     .header-top {
         position: absolute;
@@ -447,19 +594,88 @@ X-large devices (1440px or larger)
         text-align: center;
         box-shadow: -2px 22px 9px -16px rgba(0,0,0,0.10);
     }
-    .project-img{
+    .hero-text {
+        text-align: center;
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #4a4a4a;
+        opacity: 100%;
+        max-width: 80%;
+    }
+    #backtotop {
+        display: none; /*  Hidden by default */
+        position: fixed; /* Fixed/sticky position */
+        bottom: 20px; /* Place the button at the bottom of the page */
+        right: 30px; /* Place the button 30px from the right */
+        z-index: 99; /* Make sure it does not overlap */
+        border: none; /* Remove borders */
+        outline: none; /* Remove outline */
+        background-color: #ECF6F5;   /* Set a background color */
+        cursor: pointer; /* Add a mouse pointer on hover */
+        border-radius: 100px; /* Rounded corners */
+        width: 60px;
+        height: 60px;
+    }
+    .container {
+        margin: 0px 50px;        
+    }
+    .row {
+        margin: 0px 100px;
+    }
+    .project-img {
+        width: 75%;
+        padding-left: 10%;
+    }
+    .project-headerimg {
         width: 50%;
     }
-    .overview-img{
+    .project-logo {
+        width: 60%;
+        padding-top: 10%;
+    }
+    .project-text {
+        margin: 10px 20px;
+        padding-top: 100px;
+        text-align: left;
+    }
+    .view-other {
+        padding-top: 3%;
+        background-color: #fffdfd;
+    }
+    .other-img {
+        margin: 5% 35%;
         width: 30%;
+        border-radius: 10px;
+        box-shadow: 2px 10px 10px 2px #32313150;
     }
     .animation-row {
         background-color: #1d2020;
+        width: 100%;
     }
     .animation-img { 
-        max-width: 50%;
+        max-width: 30%;
         margin-left: auto;
         margin-right: auto;
+    }
+    .overview-img {
+        width: 60%;
+        padding-top: 10%;
+    }
+    .contact{
+        margin-left: 3%;
+        margin-right: 40%;
+    }
+    .profile-photo {
+        width: 250px;
+    }
+    #intro {
+        margin: 10px 300px;
+    }
+    .skillsntools {
+        list-style-type: none;
+        padding: 0px 150px;
     }
 }
 [class*="col-"] {
