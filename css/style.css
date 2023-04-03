@@ -215,9 +215,9 @@ a:active { /* selected link */
     background-color: #ECF6F5;   /* Set a background color */
     cursor: pointer; /* Add a mouse pointer on hover */
     border-radius: 100px; /* Rounded corners */
-    width: 40px;
-    height: 40px;
-    padding-top: 1%;
+    width: 50px;
+    height: 50px;
+    padding-top: 0%;
 }
 .container {
     margin: 25px;
@@ -441,8 +441,8 @@ Medium devices (640px and larger)
         background-color: #ECF6F5;   /* Set a background color */
         cursor: pointer; /* Add a mouse pointer on hover */
         border-radius: 100px; /* Rounded corners */
-        width: 70px;
-        height: 70px;
+        width: 50px;
+        height: 50px;
         padding: 0%;
     }
     .overview-img{
@@ -528,8 +528,8 @@ Large devices (1024px or larger)
         background-color: #ECF6F5;   /* Set a background color */
         cursor: pointer; /* Add a mouse pointer on hover */
         border-radius: 100px; /* Rounded corners */
-        width: 70px;
-        height: 70px;
+        width: 50px;
+        height: 50px;
         padding: 0%;
     }
     .project-img{
@@ -629,7 +629,7 @@ X-large devices (1440px or larger)
         padding-left: 10%;
     }
     .project-headerimg {
-        width: 50%;
+        width: 40%;
     }
     .project-logo {
         width: 60%;
