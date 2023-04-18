@@ -14,7 +14,12 @@
 <header class="hero">
     <div id="nav" class="nav">
         <div id="myNavtoggle" class="navtoggle">
-            <a href="index.html"><img class="logo" src="img/logo/wp-portfolio-logo.png" alt="logo"></a>
+            <a href="index.html">
+                <picture>
+                    <source class="logo" srcset="img/logo/logo.svg" media="(max-width: 767px)">
+                    <img class="logo" src="img/logo/logo@2x.svg" alt="logo">
+                </picture>
+            </a>
             <nav class="navlinks">
                 <ul>    
                     <li><a href="index.html#work">Projects</a></li>
